@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\..\..\..\..\Migrations\20220326185919_InitalCreate.cs" Link="20220326185919_InitalCreate.cs" />
+    <Compile Include="..\..\..\..\..\..\Migrations\20220326185919_InitalCreate.Designer.cs" Link="20220326185919_InitalCreate.Designer.cs" />
+    <Compile Include="..\..\..\..\..\..\Migrations\20220326190652_InitalCreate2.cs" Link="20220326190652_InitalCreate2.cs" />
+    <Compile Include="..\..\..\..\..\..\Migrations\20220326190652_InitalCreate2.Designer.cs" Link="20220326190652_InitalCreate2.Designer.cs" />
+    <Compile Include="..\..\..\..\..\..\Migrations\20220326191625_InitalCreate3.cs" Link="20220326191625_InitalCreate3.cs" />
+    <Compile Include="..\..\..\..\..\..\Migrations\20220326191625_InitalCreate3.Designer.cs" Link="20220326191625_InitalCreate3.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.15">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.15">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
+</Project>
